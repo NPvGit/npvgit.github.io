@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for the NPv.ProxySwitcher browser extension.">
+  <title>Privacy Policy · NPv.ProxySwitcher</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content" data-label="skip">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">NPv Products</a>
+      <nav class="site-nav" aria-label="Main navigation" data-aria-label="mainNav">
+        <a href="../../index.html#products" data-label="products">Products</a>
+        <a href="../../support.html" data-label="support">Support</a>
+      </nav>
+      <div class="controls">
+        <label for="language"><span data-label="language">Language</span>
+          <select id="language">
+            <option value="system" data-label="system">System</option>
+            <option value="en" lang="en">English</option>
+            <option value="de" lang="de">Deutsch</option>
+            <option value="ru" lang="ru">Русский</option>
+          </select>
+        </label>
+        <label for="theme"><span data-label="theme">Theme</span>
+          <select id="theme">
+            <option value="system" data-label="system">System</option>
+            <option value="light" data-label="light">Light</option>
+            <option value="dark" data-label="dark">Dark</option>
+          </select>
+        </label>
+      </div>
+    </header>
+    <main id="content" tabindex="-1">
+      <nav class="product-nav" aria-label="Product navigation" data-aria-label="productNav">
+        <a href="index.html" data-label="overview">Overview</a>
+        <a href="privacy.html" data-label="privacy" aria-current="page">Privacy Policy</a>
+      </nav>
+      <article lang="en" data-language="en">
+        <div class="card policy">
+          <h1>Privacy policy — NPv.ProxySwitcher</h1>
+          <p>Last updated: 8 September 2026. Developer: Nikolai :P.</p>
+          <h2>Purpose and local processing</h2>
+          <p>NPv.ProxySwitcher routes browser requests for domains you specify through proxy servers you configure. While its routing is active, unmatched domains connect directly. Disabling releases its proxy setting to Chrome&#x27;s underlying configuration.</p>
+          <p>The extension stores profile names, proxy protocols/hosts/ports, domain rules, enabled state, indicator preference, language and theme preferences, and the latest configuration error locally in chrome.storage.local. Language and theme are shared by Settings, the Privacy Policy page and the popup. All configuration is stored locally in this browser. No configuration is transferred through Google services or between devices. Proxy settings, routing rules and preferences are not sent to the developer. No account is required.</p>
+          <p>Chrome evaluates a locally generated proxy auto-configuration script to select a route based on the request hostname. The extension does not intercept request or response bodies, read page content, or record a browsing history.</p>
+          <h2>Optional page indicator</h2>
+          <p>If you enable the page indicator, Chrome requests scripting permission and access to the sites in your rules. The extension temporarily uses available tab addresses to decide whether to show “Via proxy” on a page. It displays the selected profile name as plain text, but not the proxy address, port or page URL. The profile name is intentionally displayed on the page when this optional feature is enabled. Tab addresses are not stored, logged, sent to the developer, sold or shared for advertising. The indicator is off by default; routing works without these optional permissions.</p>
+          <p>The indicator reports the configured route for the page&#x27;s main hostname, not verified connection health. Other domains requested by that page follow their own rules.</p>
+          <h2>Data sent to other parties</h2>
+          <p>The extension has no developer backend, analytics, telemetry, advertising network or promotional links. It does not transmit settings or browsing records to the developer. The developer does not sell or use extension data for advertising, creditworthiness or lending.</p>
+          <p>Connections you choose to proxy are handled by your chosen proxy server. That operator and the destination website can receive connection information and traffic according to the connection protocol and their own practices. NPv.ProxySwitcher is a tool for configuring browser routing, not a proxy provider. You choose and configure the servers yourself. The developer does not provide, operate, endorse or verify those servers and makes no guarantee about their availability, security or data-handling practices. Use only proxy operators you trust and review their privacy and security policies. HTTP/SOCKS proxy transport is not inherently encrypted; using HTTPS websites protects their content in transit subject to the normal limits of HTTPS. This extension is not a VPN, anonymity guarantee or network kill switch.</p>
+          <p>Chrome and Chrome Web Store may independently process account, installation, update or store information under Google&#x27;s policies; the extension itself sends no telemetry.</p>
+          <h2>Retention and control</h2>
+          <p>Settings remain on the device until changed or the extension is uninstalled. You can edit/delete rules and unused profiles in Settings, disable the indicator, or revoke its site access in Chrome. Turning the indicator off removes it from supported open pages but does not automatically revoke permissions. Uninstalling removes the extension&#x27;s local settings. Addresses examined for routing/indicators are not retained as a history.</p>
+          <h2>Limited Use</h2>
+          <p>NPv.ProxySwitcher&#x27;s use of information received from Google APIs adheres to the Chrome Web Store User Data Policy, including the Limited Use requirements. Data accessed by the extension is used only to provide its user-facing proxy routing and optional route indicator. The developer does not receive that data.</p>
+          <h2>Contact</h2>
+          <p>For privacy or support questions, email npv.dev.support@gmail.com. If you send an email, the developer uses your address and message only to respond and help resolve your issue. The extension does not automatically attach settings or browsing information to your message.</p>
+        </div>
+      </article>
+      <article lang="de" data-language="de" hidden>
+        <div class="card policy">
+          <h1>Datenschutzerklärung — NPv.ProxySwitcher</h1>
+          <p>Zuletzt aktualisiert: 8. September 2026. Entwickler: Nikolai :P.</p>
+          <h2>Zweck und lokale Verarbeitung</h2>
+          <p>NPv.ProxySwitcher leitet Browseranfragen für von Ihnen festgelegte Domains über von Ihnen konfigurierte Proxy-Server. Während das Routing aktiv ist, verbinden sich andere Domains direkt. Beim Deaktivieren gibt die Erweiterung ihre Proxy-Einstellung frei, sodass wieder die zugrunde liegende Chrome-Konfiguration gilt.</p>
+          <p>Die Erweiterung speichert Profilnamen, Proxy-Protokolle, Hostnamen und Ports, Domain-Regeln, Aktivierungsstatus, Anzeigeeinstellung, Sprach- und Designeinstellungen sowie den letzten Konfigurationsfehler lokal in chrome.storage.local. Sprache und Design gelten gemeinsam für Einstellungen, Datenschutzerklärung und Popup. Die gesamte Konfiguration wird lokal in diesem Browser gespeichert. Sie wird weder über Google-Dienste noch zwischen Geräten übertragen. Proxy-Einstellungen, Domain-Regeln und Benutzereinstellungen werden nicht an den Entwickler gesendet. Ein Konto ist nicht erforderlich.</p>
+          <p>Chrome führt ein lokal erzeugtes Proxy-Konfigurationsskript aus, das die Route anhand des Hostnamens der Anfrage auswählt. Die Erweiterung fängt keine Anfrage- oder Antwortinhalte ab, liest keine Seiteninhalte und zeichnet keinen Browserverlauf auf.</p>
+          <h2>Optionale Anzeige auf Webseiten</h2>
+          <p>Wenn Sie die Seitenanzeige aktivieren, fragt Chrome nach der Berechtigung zur Skriptausführung und nach Zugriff auf Websites aus Ihren Regeln. Die Erweiterung verwendet verfügbare Tab-Adressen vorübergehend, um zu entscheiden, ob „Über Proxy“ angezeigt wird. Der gewählte Profilname erscheint als reiner Text, jedoch ohne Proxy-Adresse, Port oder Seiten-URL. Der Profilname wird bei Aktivierung dieser optionalen Funktion bewusst auf der Seite angezeigt. Tab-Adressen werden nicht gespeichert, protokolliert, an den Entwickler gesendet, verkauft oder für Werbung weitergegeben. Die Anzeige ist standardmäßig aus; das Routing funktioniert ohne diese zusätzlichen Berechtigungen.</p>
+          <p>Die Anzeige zeigt die konfigurierte Route für die Hauptdomain der Seite, nicht die bestätigte Funktionsfähigkeit der Verbindung. Anfragen der Seite an andere Domains folgen deren eigenen Regeln.</p>
+          <h2>Datenübermittlung an andere Stellen</h2>
+          <p>Die Erweiterung hat keinen Entwickler-Server, keine Analyse, Telemetrie, Werbenetzwerke oder Werbelinks. Sie übermittelt keine Einstellungen oder Verlaufsdaten an den Entwickler. Der Entwickler verkauft keine Erweiterungsdaten und verwendet sie nicht für Werbung, Bonitätsbewertungen oder Kreditvergabe.</p>
+          <p>Verbindungen, die Sie über einen Proxy leiten, werden vom gewählten Server verarbeitet. Dessen Betreiber und die Zielwebsite können je nach Verbindungsprotokoll und ihren eigenen Verfahren Verbindungsinformationen und Datenverkehr erhalten. NPv.ProxySwitcher ist ein Werkzeug zur Konfiguration des Browser-Routings, kein Proxy-Anbieter. Sie wählen und konfigurieren die Server selbst. Der Entwickler stellt diese Server nicht bereit, betreibt, empfiehlt oder prüft sie nicht und gibt keine Garantie für ihre Verfügbarkeit, Sicherheit oder Datenverarbeitung. Verwenden Sie nur Proxy-Betreiber, denen Sie vertrauen, und prüfen Sie deren Datenschutz- und Sicherheitsrichtlinien. HTTP/SOCKS-Proxy-Transport ist nicht grundsätzlich verschlüsselt; HTTPS-Websites schützen Inhalte während der Übertragung innerhalb der üblichen Grenzen von HTTPS. Diese Erweiterung ist kein VPN, keine Anonymitätsgarantie und kein Netzwerk-Kill-Switch.</p>
+          <p>Chrome und Chrome Web Store können Konto-, Installations-, Update- oder Store-Informationen unabhängig nach den Richtlinien von Google verarbeiten; die Erweiterung selbst sendet keine Telemetrie.</p>
+          <h2>Aufbewahrung und Kontrolle</h2>
+          <p>Einstellungen bleiben bis zur Änderung oder Deinstallation auf dem Gerät. In den Einstellungen können Sie Regeln und ungenutzte Profile bearbeiten oder löschen, die Anzeige ausschalten oder den Websitezugriff in Chrome widerrufen. Das Ausschalten entfernt die Anzeige von unterstützten geöffneten Seiten, widerruft aber Berechtigungen nicht automatisch. Die Deinstallation entfernt die lokalen Einstellungen. Für Routing und Anzeige geprüfte Adressen werden nicht als Verlauf aufbewahrt.</p>
+          <h2>Eingeschränkte Nutzung</h2>
+          <p>Die Nutzung von Informationen aus Google-APIs durch NPv.ProxySwitcher entspricht der Chrome Web Store User Data Policy einschließlich der Limited-Use-Anforderungen. Die von der Erweiterung abgerufenen Daten werden nur für die sichtbaren Funktionen Proxy-Routing und optionale Routenanzeige verwendet. Der Entwickler erhält diese Daten nicht.</p>
+          <h2>Kontakt</h2>
+          <p>Bei Datenschutz- oder Supportfragen schreiben Sie an npv.dev.support@gmail.com. Wenn Sie eine E-Mail senden, verwendet der Entwickler Ihre Adresse und Nachricht nur zur Beantwortung und zur Hilfe bei Ihrem Anliegen. Die Erweiterung fügt Ihrer Nachricht nicht automatisch Einstellungen oder Informationen über besuchte Websites hinzu.</p>
+        </div>
+      </article>
+      <article lang="ru" data-language="ru" hidden>
+        <div class="card policy">
+          <h1>Политика конфиденциальности — NPv.ProxySwitcher</h1>
+          <p>Последнее обновление: 8 сентября 2026 года. Разработчик: Nikolai :P.</p>
+          <h2>Назначение и локальная обработка</h2>
+          <p>NPv.ProxySwitcher направляет запросы браузера к указанным вами доменам через настроенные вами прокси-серверы. Пока маршрутизация активна, остальные домены подключаются напрямую. При отключении расширение освобождает настройки прокси, и Chrome возвращается к своей базовой конфигурации.</p>
+          <p>Расширение хранит названия профилей, протоколы, адреса и порты прокси, доменные правила, состояние включения, настройку индикатора, язык, тему и последнюю ошибку конфигурации локально в chrome.storage.local. Язык и тема общие для настроек, страницы конфиденциальности и popup. Вся конфигурация хранится локально в этом браузере. Расширение не передаёт её через сервисы Google или между устройствами. Настройки прокси, правила сайтов и пользовательские предпочтения не отправляются разработчику. Учётная запись не нужна.</p>
+          <p>Chrome выполняет локально созданный скрипт автоматической настройки прокси, который выбирает маршрут по имени хоста запроса. Расширение не перехватывает содержимое запросов и ответов, не читает содержимое страниц и не записывает историю посещений.</p>
+          <h2>Необязательный индикатор на странице</h2>
+          <p>При включении индикатора Chrome запрашивает разрешение на выполнение скриптов и доступ к сайтам из ваших правил. Расширение временно использует доступные адреса вкладок, чтобы определить, нужно ли показать надпись «Через прокси». Название выбранного профиля выводится обычным текстом, но адрес прокси, порт и URL страницы не отображаются. Название профиля намеренно показывается на странице при включении этой необязательной функции. Адреса вкладок не сохраняются, не записываются в журнал, не отправляются разработчику, не продаются и не передаются для рекламы. По умолчанию индикатор выключен; маршрутизация работает без этих дополнительных разрешений.</p>
+          <p>Индикатор показывает настроенный маршрут для основного домена страницы, а не подтверждённую работоспособность соединения. Запросы страницы к другим доменам обрабатываются по их собственным правилам.</p>
+          <h2>Данные, передаваемые другим сторонам</h2>
+          <p>У расширения нет сервера разработчика, аналитики, телеметрии, рекламной сети или промоссылок. Оно не передаёт разработчику настройки или записи о посещениях. Разработчик не продаёт данные расширения и не использует их для рекламы, оценки кредитоспособности или кредитования.</p>
+          <p>Соединения, которые вы направляете через прокси, обслуживаются выбранным вами сервером. Его оператор и конечный сайт могут получать сведения о соединении и трафик в зависимости от протокола и их собственных правил. NPv.ProxySwitcher — инструмент настройки маршрутизации браузера, а не поставщик прокси. Серверы вы выбираете и настраиваете самостоятельно. Разработчик расширения не предоставляет эти серверы, не управляет ими, не рекомендует и не проверяет их, а также не гарантирует их доступность, безопасность или порядок обработки данных. Используйте только те прокси, операторам которых вы доверяете, и ознакомьтесь с их правилами конфиденциальности и безопасности. Транспорт HTTP/SOCKS сам по себе не зашифрован; HTTPS-сайты защищают содержимое при передаче с обычными ограничениями HTTPS. Это расширение не является VPN, гарантией анонимности или средством полной блокировки сетевых утечек.</p>
+          <p>Chrome и Chrome Web Store могут независимо обрабатывать сведения об аккаунте, установке, обновлениях или магазине согласно правилам Google; само расширение не отправляет телеметрию.</p>
+          <h2>Хранение и управление</h2>
+          <p>Настройки остаются на устройстве до изменения или удаления расширения. В настройках можно изменять и удалять правила и неиспользуемые профили, отключать индикатор или отзывать доступ к сайтам в Chrome. Отключение индикатора убирает его с поддерживаемых открытых страниц, но не отзывает разрешения автоматически. Удаление расширения удаляет его локальные настройки. Адреса, проверяемые для маршрутизации и индикатора, не сохраняются в виде истории.</p>
+          <h2>Ограниченное использование</h2>
+          <p>Использование NPv.ProxySwitcher информации, полученной через API Google, соответствует Политике пользовательских данных Chrome Web Store, включая требования Limited Use. Доступные расширению данные используются только для его пользовательских функций: маршрутизации через прокси и необязательного индикатора. Разработчик не получает эти данные.</p>
+          <h2>Контакты</h2>
+          <p>По вопросам конфиденциальности и поддержки пишите на npv.dev.support@gmail.com. Если вы напишете письмо, разработчик использует ваш адрес и текст сообщения только для ответа и помощи с вашим вопросом. Расширение не прикладывает к письму настройки или сведения о посещённых сайтах автоматически.</p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p data-label="local">This website stores language and theme locally in your browser, separately from the extension. It uses no cookies, analytics or telemetry.</p>
+      <a href="../../support.html" data-label="support">Support</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selective per-domain proxy routing for Chromium-based browsers.">
+  <title>NPv.ProxySwitcher · NPv Products</title>
+  <link rel="stylesheet" href="../../styles.css">
+  <script src="../../site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content" data-label="skip">Skip to content</a>
+  <div class="shell">
+    <header class="site-header">
+      <a class="brand" href="../../index.html">NPv Products</a>
+      <nav class="site-nav" aria-label="Main navigation" data-aria-label="mainNav">
+        <a href="../../index.html#products" data-label="products">Products</a>
+        <a href="../../support.html" data-label="support">Support</a>
+      </nav>
+      <div class="controls">
+        <label for="language"><span data-label="language">Language</span>
+          <select id="language">
+            <option value="system" data-label="system">System</option>
+            <option value="en" lang="en">English</option>
+            <option value="de" lang="de">Deutsch</option>
+            <option value="ru" lang="ru">Русский</option>
+          </select>
+        </label>
+        <label for="theme"><span data-label="theme">Theme</span>
+          <select id="theme">
+            <option value="system" data-label="system">System</option>
+            <option value="light" data-label="light">Light</option>
+            <option value="dark" data-label="dark">Dark</option>
+          </select>
+        </label>
+      </div>
+    </header>
+    <main id="content" tabindex="-1">
+      <nav class="product-nav" aria-label="Product navigation" data-aria-label="productNav">
+        <a href="index.html" data-label="overview" aria-current="page">Overview</a>
+        <a href="privacy.html" data-label="privacy">Privacy Policy</a>
+      </nav>
+      <article lang="en" data-language="en">
+        <div class="hero"><h1>NPv.ProxySwitcher</h1><p class="intro">Selective per-domain proxy routing for Chromium-based browsers.</p></div>
+        <section class="card">
+          <h2>How it works</h2>
+          <ul>
+            <li>Configure your own proxy profiles: HTTP, HTTPS, SOCKS4 or SOCKS5.</li>
+            <li>Assign a domain to a profile. The rule includes that domain and its subdomains; more specific rules take priority.</li>
+            <li>While routing is enabled, unmatched domains connect directly (DIRECT). Disabling releases the extension’s proxy setting to the browser’s underlying configuration.</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Your configuration, your servers</h2>
+          <p>Proxy servers are not provided. You choose and configure them yourself; their operators may process traffic routed through them. Profiles, rules and preferences are stored locally in the browser. No analytics, telemetry or browsing history collection. Proxy configuration and routing rules are not sent to the developer.</p>
+          <p>The extension does not read or rewrite website content. An optional on-page indicator adds a small label showing the selected profile; it requires site access and does not verify connection health.</p>
+        </section>
+        <section class="card">
+          <h2>Author’s Note</h2>
+          <p>NPv.ProxySwitcher began with a practical problem: I had trouble accessing topdeck.ru through my internet provider while other websites worked normally. A browser extension solved the access problem, but repeatedly switching it on and off for one website became inconvenient. I created NPv.ProxySwitcher to assign user-configured proxy servers only to selected websites, leaving unmatched domains connected directly while routing is enabled. The extension manages proxy routing; it does not provide proxy servers.</p>
+        </section>
+        <section class="card">
+          <h2>Project information</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="https://github.com/NPvGit/npv-proxy-switcher-site">Public website repository</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </section>
+      </article>
+      <article lang="de" data-language="de" hidden>
+        <div class="hero"><h1>NPv.ProxySwitcher</h1><p class="intro">Domainbezogenes Proxy-Routing für Chromium-basierte Browser.</p></div>
+        <section class="card">
+          <h2>So funktioniert es</h2>
+          <ul>
+            <li>Eigene Proxy-Profile konfigurieren: HTTP, HTTPS, SOCKS4 oder SOCKS5.</li>
+            <li>Eine Domain einem Profil zuweisen. Die Regel gilt auch für ihre Subdomains; spezifischere Regeln haben Vorrang.</li>
+            <li>Bei aktiviertem Routing verbinden sich andere Domains direkt (DIRECT). Beim Ausschalten gibt die Erweiterung ihre Proxy-Einstellung frei; es gilt wieder die zugrunde liegende Browser-Konfiguration.</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Ihre Konfiguration, Ihre Server</h2>
+          <p>Proxy-Server werden nicht bereitgestellt. Sie wählen und konfigurieren die Server selbst; deren Betreiber können den darüber geleiteten Datenverkehr verarbeiten. Profile, Regeln und Einstellungen bleiben lokal im Browser. Keine Analyse, Telemetrie oder Erfassung des Browserverlaufs. Proxy-Einstellungen und Domain-Regeln werden nicht an den Entwickler gesendet.</p>
+          <p>Die Erweiterung liest oder verändert keine Website-Inhalte. Eine optionale Seitenanzeige fügt ein kleines Label mit dem gewählten Profil hinzu. Sie benötigt Websitezugriff und prüft nicht die Funktionsfähigkeit der Verbindung.</p>
+        </section>
+        <section class="card">
+          <h2>Anmerkung des Autors</h2>
+          <p>NPv.ProxySwitcher entstand aus einem praktischen Problem: Über meinen Internetanbieter konnte ich topdeck.ru nicht zuverlässig erreichen, während andere Websites normal funktionierten. Eine Browsererweiterung löste das Zugriffsproblem. Sie jedoch immer wieder für eine einzelne Website ein- und auszuschalten, wurde auf Dauer umständlich. Deshalb habe ich NPv.ProxySwitcher entwickelt: Selbst konfigurierte Proxy-Server lassen sich ausgewählten Websites zuweisen, während andere Domains bei aktiviertem Routing direkt verbunden bleiben. Die Erweiterung verwaltet das Proxy-Routing und stellt keine Proxy-Server bereit.</p>
+        </section>
+        <section class="card">
+          <h2>Projektinformationen</h2>
+          <ul>
+            <li><a href="privacy.html">Datenschutzerklärung</a></li>
+            <li><a href="https://github.com/NPvGit/npv-proxy-switcher-site">Öffentliches Website-Repository</a></li>
+            <li><a href="../../support.html">Support</a></li>
+          </ul>
+        </section>
+      </article>
+      <article lang="ru" data-language="ru" hidden>
+        <div class="hero"><h1>NPv.ProxySwitcher</h1><p class="intro">Маршрутизация через прокси для отдельных доменов в браузерах на базе Chromium.</p></div>
+        <section class="card">
+          <h2>Как это работает</h2>
+          <ul>
+            <li>Настройте собственные профили прокси: HTTP, HTTPS, SOCKS4 или SOCKS5.</li>
+            <li>Назначьте домен выбранному профилю. Правило включает сам домен и его поддомены; более конкретное правило имеет приоритет.</li>
+            <li>Пока маршрутизация включена, остальные домены подключаются напрямую (DIRECT). При отключении расширение освобождает настройки прокси, и браузер возвращается к своей базовой конфигурации.</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Ваши настройки и серверы</h2>
+          <p>Прокси-серверы не предоставляются. Вы выбираете и настраиваете их самостоятельно; операторы могут обрабатывать направленный через них трафик. Профили, правила и предпочтения хранятся локально в браузере. Нет аналитики, телеметрии или сбора истории посещений. Настройки прокси и правила сайтов не отправляются разработчику.</p>
+          <p>Расширение не читает и не переписывает содержимое сайтов. Необязательный индикатор добавляет небольшую надпись с выбранным профилем. Для него нужен доступ к сайту; он не проверяет работоспособность соединения.</p>
+        </section>
+        <section class="card">
+          <h2>Заметка автора</h2>
+          <p>NPv.ProxySwitcher появился из практической задачи: через моего интернет-провайдера возникали проблемы с доступом к topdeck.ru, хотя остальные сайты работали нормально. Расширение для браузера помогло, но постоянно включать и выключать его ради одного сайта оказалось неудобно. Поэтому я создал NPv.ProxySwitcher: он позволяет назначить настроенный пользователем прокси отдельным сайтам, а остальные домены подключает напрямую, пока маршрутизация включена. Расширение управляет маршрутизацией и не предоставляет прокси-серверы.</p>
+        </section>
+        <section class="card">
+          <h2>Информация о проекте</h2>
+          <ul>
+            <li><a href="privacy.html">Политика конфиденциальности</a></li>
+            <li><a href="https://github.com/NPvGit/npv-proxy-switcher-site">Публичный репозиторий сайта</a></li>
+            <li><a href="../../support.html">Поддержка</a></li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p data-label="local">This website stores language and theme locally in your browser, separately from the extension. It uses no cookies, analytics or telemetry.</p>
+      <a href="../../support.html" data-label="support">Support</a>
+    </footer>
+  </div>
+</body>
+</html>
