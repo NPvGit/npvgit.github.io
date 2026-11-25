@@ -36,12 +36,24 @@
       <section id="products" aria-labelledby="products-heading">
         <h1 id="products-heading" data-label="products">Products</h1>
         <!-- Add new products at the top of this list. -->
-        <div class="product-card">
+        <div class="product-card product-card-illustrated">
           <div class="product-summary">
             <h2 class="product-name">Knipser</h2>
             <p data-label="knipserIntro">A Windows app for importing, organizing, viewing and editing your local photo and video collection.</p>
             <a class="button" href="products/knipser/" data-label="knipserPage">Knipser overview</a>
             <a class="policy-link" href="products/knipser/privacy.html" data-label="privacy">Privacy Policy</a>
+          </div>
+          <div class="product-illustration photo-diagram" aria-hidden="true">
+            <div class="photo-flow">
+              <span class="photo-tile photo-source"></span>
+              <span class="photo-connector"></span>
+              <div class="photo-archive">
+                <span class="photo-tile"></span>
+                <span class="photo-tile"></span>
+                <span class="photo-tile"></span>
+                <span class="photo-tile"></span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="product-card product-card-illustrated">
@@ -52,7 +64,7 @@
             <a class="button" href="products/proxy-switcher/"><span data-label="viewProduct">Explore</span> NPv.ProxySwitcher</a>
             <a class="policy-link" href="products/proxy-switcher/privacy.html" data-label="privacy">Privacy Policy</a>
           </div>
-          <div class="route-diagram" aria-hidden="true">
+          <div class="product-illustration route-diagram" aria-hidden="true">
             <div class="route-trunk"></div>
             <div class="route-branch"></div>
             <div class="route-branch route-direct"></div>
