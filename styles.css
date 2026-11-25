@@ -6,10 +6,15 @@
   --muted: light-dark(#595a52, #bdbbb2);
   --line: light-dark(#d7d2c9, #423e39);
   --control-line: light-dark(#888378, #918b80);
-  --accent: light-dark(#87442c, #efb68f);
-  --on-accent: light-dark(#fffdfa, #27190f);
-  --wash: light-dark(#eeece7, #282a29);
-  --grid: light-dark(#33353024, #deddd726);
+  --accent: light-dark(#583399, #c9b4ff);
+  --accent-hover: light-dark(#462375, #dccdff);
+  --on-accent: light-dark(#fffdfa, #261843);
+  --teal: light-dark(#126772, #7adbe4);
+  --wash: light-dark(#f2edfa, #241e34);
+  --wash-teal: light-dark(#cfecef, #173e46);
+  --wash-pink: light-dark(#f2d9eb, #3b2747);
+  --grid: light-dark(#58339928, #c9b4ff30);
+  --print-colors: linear-gradient(110deg, #2699ae 0 25%, #c94d7c 25% 50%, #e4bf43 50% 75%, #7664b9 75%);
   --serif: Georgia, serif;
   font: 100%/1.65 system-ui, sans-serif;
 }
@@ -93,7 +98,7 @@ a[aria-current="page"] { font-weight: 700; }
   width: clamp(1.35rem, 2.9vw, 2.125rem);
   aspect-ratio: 1;
   flex: none;
-  background: currentColor;
+  background: var(--print-colors);
   clip-path: polygon(50% 0, 55% 36%, 74% 26%, 64% 45%, 100% 50%, 64% 55%, 74% 74%, 55% 64%, 50% 100%, 45% 64%, 26% 74%, 36% 55%, 0 50%, 36% 45%, 26% 26%, 45% 36%);
 }
 
@@ -143,7 +148,7 @@ a[aria-current="page"] { font-weight: 700; }
 }
 
 .language-switch button[aria-pressed="true"] {
-  color: var(--accent);
+  color: var(--teal);
 }
 
 main { flex: 1; }
@@ -151,8 +156,9 @@ main { flex: 1; }
 .hero::before {
   content: "";
   display: block;
-  width: 1.875rem;
-  border-top: 1px solid var(--accent);
+  width: 5.5rem;
+  height: 0.25rem;
+  background: var(--print-colors);
   margin-bottom: 1.25rem;
 }
 
@@ -182,19 +188,23 @@ p:last-child { margin-bottom: 0; }
   max-width: 100%;
   padding: 0.65rem 0.95rem;
   border-radius: 0.3125rem;
-  background: var(--text);
-  color: var(--bg);
+  background: var(--accent);
+  color: var(--on-accent);
   text-decoration: none;
   font-weight: 650;
 }
 
-.button:hover { background: var(--accent); color: var(--on-accent); }
+.button:hover { background: var(--accent-hover); }
 .policy-link { display: block; width: fit-content; margin-top: 0.75rem; }
 
 .route-diagram {
   position: relative;
   min-height: 11rem;
-  background: radial-gradient(circle, var(--grid) 1.25px, transparent 1.5px) center / 1rem 1rem, var(--wash);
+  background:
+    radial-gradient(circle, var(--grid) 1.25px, transparent 1.5px) center / 1rem 1rem,
+    radial-gradient(ellipse at top right, var(--wash-pink), transparent 68%),
+    radial-gradient(ellipse at bottom left, var(--wash-teal), transparent 72%),
+    var(--wash);
   border-inline-start: 1px solid var(--line);
 }
 
@@ -202,11 +212,11 @@ p:last-child { margin-bottom: 0; }
 .route-trunk, .route-branch { color: var(--accent); }
 .route-trunk { top: 50%; left: 16%; width: 21%; border-top: 2px solid; }
 .route-branch { top: 30%; left: 37%; width: 24%; height: 20%; border: 2px solid; border-width: 2px 0 0 2px; border-radius: 0.85rem 0 0; }
-.route-direct { top: 50%; border-width: 0 0 2px 2px; border-radius: 0 0 0 0.85rem; border-style: dashed; }
+.route-direct { top: 50%; color: var(--teal); border-width: 0 0 2px 2px; border-radius: 0 0 0 0.85rem; border-style: dashed; }
 .route-origin { top: 50%; left: 16%; width: 1rem; height: 1rem; translate: -50% -50%; border-radius: 50%; background: var(--accent); }
 .route-node { left: 60%; translate: 0 -50%; padding: 0.28rem 0.5rem; border-radius: 0.3rem; font: 650 0.8rem/1.4 ui-monospace, monospace; letter-spacing: 0.06em; }
 .route-proxy { top: 30%; background: var(--accent); color: var(--on-accent); }
-.route-destination { top: 70%; border: 1px solid var(--accent); background: var(--card); color: var(--accent); }
+.route-destination { top: 70%; border: 1px solid var(--teal); background: var(--card); color: var(--teal); }
 
 article, .contact { max-width: 54rem; }
 article .card + .card { margin-top: 1rem; }
