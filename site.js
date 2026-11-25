@@ -8,7 +8,8 @@
       auto: 'Auto', systemLanguage: 'System language', switchTheme: 'Switch to',
       skip: 'Skip to content',
       local: 'This website stores language and theme locally in your browser, separately from the extension. It uses no cookies, analytics or telemetry.',
-      homeIntro: 'Product information, documentation and support for NPv software.',
+      comingSoon: 'Coming soon',
+      knipserIntro: 'A Windows app for importing, organizing and viewing your local photo and video collection.',
       extension: 'Browser extension',
       productIntro: 'Route selected domains through your own proxy servers. Other domains connect directly while routing is enabled.',
       viewProduct: 'Explore', publisher: 'Publisher',
@@ -21,7 +22,8 @@
       auto: 'Auto', systemLanguage: 'Systemsprache', switchTheme: 'Wechsel zu',
       skip: 'Zum Inhalt',
       local: 'Diese Website speichert Sprache und Design lokal im Browser, getrennt von der Erweiterung. Sie verwendet keine Cookies, Analyse oder Telemetrie.',
-      homeIntro: 'Produktinformationen, Dokumentation und Support für NPv-Software.',
+      comingSoon: 'Demnächst',
+      knipserIntro: 'Eine Windows-App zum Importieren, Organisieren und Ansehen Ihrer lokalen Foto- und Videosammlung.',
       extension: 'Browsererweiterung',
       productIntro: 'Leiten Sie ausgewählte Domains über eigene Proxy-Server. Andere Domains verbinden sich bei aktiviertem Routing direkt.',
       viewProduct: 'Zu', publisher: 'Herausgeber',
@@ -34,7 +36,8 @@
       auto: 'Авто', systemLanguage: 'Системный язык', switchTheme: 'Следующая тема',
       skip: 'К содержимому',
       local: 'Сайт хранит язык и тему локально в браузере, отдельно от расширения. Сайт не использует cookies, аналитику или телеметрию.',
-      homeIntro: 'Информация о продуктах NPv, документация и поддержка.',
+      comingSoon: 'Скоро',
+      knipserIntro: 'Приложение для Windows, в котором можно импортировать, упорядочивать и просматривать локальную коллекцию фото и видео.',
       extension: 'Расширение для браузера',
       productIntro: 'Направляйте запросы к выбранным доменам через собственные прокси-серверы. Пока маршрутизация включена, остальные домены подключаются напрямую.',
       viewProduct: 'Открыть', publisher: 'Издатель',
@@ -76,8 +79,8 @@
     document.querySelectorAll('[data-aria-label]').forEach(el => {
       el.setAttribute('aria-label', labels[language][el.dataset.ariaLabel]);
     });
-    const title = document.querySelector('main h1[data-label], main article:not([hidden]) .policy h1');
-    if (title) document.title = title.textContent + ' · npvgit.github.io';
+    const title = document.querySelector('main .hero h1[data-label], main article:not([hidden]) .policy h1');
+    if (title) document.title = title.textContent + ' · NPv';
     for (const button of languageButtons) {
       button.setAttribute('aria-pressed', String(button.dataset.locale === state.language));
     }
